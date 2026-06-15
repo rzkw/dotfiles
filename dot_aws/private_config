@@ -1,0 +1,3 @@
+[default]
+login_session = arn:aws:iam::874186497092:user/rzkw-iam
+region = ap-southeast-3

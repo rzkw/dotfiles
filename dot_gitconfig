@@ -1,0 +1,9 @@
+# This is Git's per-user configuration file.
+[user]
+	signingkey = /Users/rizky/.ssh/mac-commitsign.pub
+	email = 167944030+rzkw@users.noreply.github.com
+	name = Rizky
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
