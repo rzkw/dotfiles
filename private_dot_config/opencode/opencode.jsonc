@@ -1,0 +1,23 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "plugin": ["superpowers@git+https://github.com/obra/superpowers.git","./.opencode/plugins/ponytail.mjs"],
+  "permission": {
+    "bash": "ask",
+    "edit": "ask",
+    "write": "ask",
+	},
+  "mcp": {
+    "github": {
+      "type": "remote",
+      "url": "https://api.githubcopilot.com/mcp/",
+      "enabled": true,
+      "oauth": false,
+      "headers": {
+        "Authorization": "Bearer {env:GITHUB_PERSONAL_ACCESS_TOKEN}",
+        "X-MCP-Readonly": "true",
+        "X-MCP-Lockdown": "true",
+        "X-MCP-Toolsets": "context,repos,issues,projects,pull_requests,users,git,security_advisories"
+      }
+      }
+    }
+}
